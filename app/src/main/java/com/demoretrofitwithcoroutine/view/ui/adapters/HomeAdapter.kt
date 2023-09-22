@@ -1,0 +1,69 @@
+package com.demoretrofitwithcoroutine.view.ui.adapters
+
+import android.content.Intent
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
+import com.demoretrofitwithcoroutine.databinding.ItemHomeBinding
+import com.demoretrofitwithcoroutine.model.HomeData
+import com.demoretrofitwithcoroutine.view.DoctorListActivity
+
+class HomeAdapter(private val homeDataList: List<HomeData>) :
+    RecyclerView.Adapter<HomeAdapterViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapterViewHolder {
+        val binding = ItemHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return HomeAdapterViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: HomeAdapterViewHolder, position: Int) {
+        //Option 1.Normal way
+        // getting the data from list for given position
+        /* val homeData = homeDataList[position]
+         // setting thew title from home data
+         holder.binding.txtTitle.text = homeData.title
+         // setting the icon
+         holder.binding.imgHomeItem.background = ContextCompat.getDrawable(context, homeData.resId)
+
+         // Option 2.using with scope function
+         with(holder) {
+             val homeData = homeDataList[position]
+             binding.txtTitle.text = homeData.title
+             binding.imgHomeItem.background = ContextCompat.getDrawable(context, homeData.resId)
+         }
+
+         //Option  3
+         with(holder) {
+             with(homeDataList[position]) {
+                 binding.apply {
+                     txtTitle.text = title
+                     imgHomeItem.background = ContextCompat.getDrawable(context, resId)
+                 }
+
+             }
+         }
+        //Option 4
+        with(holder) {
+            with(homeDataList[position]) {
+                binding.txtTitle.text = title
+                binding.imgHomeItem.background = ContextCompat.getDrawable(context, resId)
+            }
+        }*/
+        // Option 5
+        with(holder.binding) {
+            with(homeDataList[position]) {
+                txtTitle.text = title
+                imgHomeItem.background = ContextCompat.getDrawable(root.context, resId)
+            }
+            row.setOnClickListener {
+                val intent = Intent(root.context, DoctorListActivity::class.java)
+                root.context.startActivity(intent)
+            }
+
+        }
+
+    }
+
+    override fun getItemCount() = homeDataList.size
+
+}
