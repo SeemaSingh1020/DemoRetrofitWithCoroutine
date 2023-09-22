@@ -3,7 +3,36 @@ package com.demoretrofitwithcoroutine.model
 import com.demoretrofitwithcoroutine.R
 import javax.inject.Inject
 
+/**
+ * A repository class for managing HomeData objects.
+ *
+ * This class serves as a repository for HomeData objects, providing methods to
+ * retrieve, store, and manipulate data related to homes. It abstracts the underlying
+ * data source, such as a database or an external API, and provides a high-level
+ * interface for working with home-related data.
+ *
+ * Usage:
+ * - Use the methods provided by this class to interact with HomeData objects.
+ *
+ * Example:
+ * ```java
+ * HomeDataRepository repository = new HomeDataRepository();
+ * List<HomeData> homes = repository.getHomeData();
+ * ```
+ *
+ * @constructor Creates a new instance of the HomeDataRepository.
+ */
 class HomeDataRepository @Inject constructor() {
+
+    /**
+     * Retrieves a list of HomeData objects.
+     *
+     * This function fetches a list of HomeData objects containing information about homes
+     * from a data source, such as a database or an external API. The fetched data is returned
+     * as a List of HomeData objects.
+     *
+     * @return A List of HomeData objects representing homes.
+     */
 
     fun getHomeData(): List<HomeData> {
         return createDataForHome()
