@@ -8,7 +8,15 @@ class HomeDataRepository @Inject constructor() {
     fun getHomeData(): List<HomeData> {
         return createDataForHome()
     }
-
+    /**
+     * Creates a list of HomeData objects.
+     *
+     * This function generates a list of HomeData objects containing information about homes.
+     * The generated data can be used for various purposes, such as populating a user interface
+     * with sample home information for testing and development.
+     *
+     * @return A List of HomeData objects representing homes.
+     */
     private fun createDataForHome(): List<HomeData> {
         val homeDataList = ArrayList<HomeData>()
         val doctor = HomeData("Doctor", R.drawable.ic_doctor)
