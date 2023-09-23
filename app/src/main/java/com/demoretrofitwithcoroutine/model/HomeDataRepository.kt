@@ -56,7 +56,7 @@ class HomeDataRepository @Inject constructor() {
         homeDataList.add(pharmacy)
         val ambulance = HomeData("Ambulance", R.drawable.ic_ambulance)
         homeDataList.add(ambulance)
-        val doctorAtHome = HomeData("Doctor At Home", R.drawable.ic_doctor)
+        val doctorAtHome = HomeData("Doctor At Home", R.drawable.ic_doctor_at_home)
         homeDataList.add(doctorAtHome)
         val nurseAtHome = HomeData("Nurse At Home", R.drawable.ic_doctor)
         homeDataList.add(nurseAtHome)

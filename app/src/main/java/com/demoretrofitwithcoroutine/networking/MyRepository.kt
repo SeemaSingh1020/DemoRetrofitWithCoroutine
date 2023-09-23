@@ -22,6 +22,9 @@ interface MyRepository {
      @GET("/java/object")
      suspend fun getJavaTutorials(): Response<DemoUser>
 
-     @GET("/v3/1f208599-215e-452a-9ea0-35b6bdbd5388")//
+     @GET("/v3/1f208599-215e-452a-9ea0-35b6bdbd5388")
     suspend fun getDoctorData(): Response<DoctorData>
+
+    @GET("v3/4b5532eb-ccd7-4cd3-aef8-49c54b5ca7e5")
+    suspend fun getHospitalData():Response<List<NearHospitalsList>>
 }

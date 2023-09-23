@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.demoretrofitwithcoroutine.databinding.ItemHomeBinding
 import com.demoretrofitwithcoroutine.model.HomeData
 import com.demoretrofitwithcoroutine.view.DoctorListActivity
+import com.demoretrofitwithcoroutine.view.HospitalsListActivity
 
 class HomeAdapter(private val homeDataList: List<HomeData>) :
     RecyclerView.Adapter<HomeAdapterViewHolder>() {
@@ -56,8 +57,14 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                 imgHomeItem.background = ContextCompat.getDrawable(root.context, resId)
             }
             row.setOnClickListener {
-                val intent = Intent(root.context, DoctorListActivity::class.java)
-                root.context.startActivity(intent)
+                if (position==0){
+                    val intent = Intent(root.context, DoctorListActivity::class.java)
+                    root.context.startActivity(intent)
+                }else if (position==1){
+                    val intent = Intent(root.context, HospitalsListActivity::class.java)
+                    root.context.startActivity(intent)
+                }
+
             }
 
         }

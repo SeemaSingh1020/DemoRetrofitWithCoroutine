@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginEnd="@dimen/dp_8"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="@dimen/dp_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_shape"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_hospitals"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/ic_hospitals" />
+
+        <TextView
+            android:id="@+id/txt_hospitals_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_hospitals"
+            android:text="@string/brd_medical_collage" />
+
+        <TextView
+            android:id="@+id/txt_contact_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hospitals_name"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_hospitals"
+            android:text="@string/contact_person_syed" />
+
+        <TextView
+            android:id="@+id/txt_call_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_contact_person"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_hospitals"
+            android:text="@string/call_on_8343834383" />
+
+        <TextView
+            android:id="@+id/txt_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_call_on"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_hospitals"
+            android:text="@string/away_12_km" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
