@@ -19,8 +19,8 @@ class HospitalsListAdapter(private val hospitalList: List<NearHospitalsList>) :
         with(holder.binding) {
             with(hospitalList[position]) {
                 txtHospitalsName.text = hospitalName
-                txtContactPerson.text = contactPerson
-                txtCallOn.text = number
+                txtContactPerson.text ="Contact Person : "+ contactPerson
+                txtCallOn.text = "Contact : "+number
                 txtKm.text = distance
             }
 
@@ -28,6 +28,4 @@ class HospitalsListAdapter(private val hospitalList: List<NearHospitalsList>) :
     }
 
     override fun getItemCount() = hospitalList.size
-
-
 }

@@ -18,6 +18,9 @@
         android:theme="@style/Theme.DemoRetrofitWithCoroutine"
         tools:targetApi="31">
         <activity
+            android:name=".view.PharmacyListActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.HospitalsListActivity"
             android:exported="false" />
         <activity

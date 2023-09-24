@@ -9,6 +9,7 @@ import com.demoretrofitwithcoroutine.databinding.ItemHomeBinding
 import com.demoretrofitwithcoroutine.model.HomeData
 import com.demoretrofitwithcoroutine.view.DoctorListActivity
 import com.demoretrofitwithcoroutine.view.HospitalsListActivity
+import com.demoretrofitwithcoroutine.view.PharmacyListActivity
 
 class HomeAdapter(private val homeDataList: List<HomeData>) :
     RecyclerView.Adapter<HomeAdapterViewHolder>() {
@@ -57,13 +58,17 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                 imgHomeItem.background = ContextCompat.getDrawable(root.context, resId)
             }
             row.setOnClickListener {
-                if (position==0){
+                if (position == 0) {
                     val intent = Intent(root.context, DoctorListActivity::class.java)
                     root.context.startActivity(intent)
-                }else if (position==1){
+                } else if (position == 1) {
                     val intent = Intent(root.context, HospitalsListActivity::class.java)
                     root.context.startActivity(intent)
+                } else if (position == 2) {
+                    val intent = Intent(root.context,PharmacyListActivity::class.java)
+                    root.context.startActivity(intent)
                 }
+
 
             }
 

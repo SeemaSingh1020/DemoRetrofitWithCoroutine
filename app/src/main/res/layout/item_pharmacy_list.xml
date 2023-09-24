@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginEnd="@dimen/dp_8"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="@dimen/dp_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_shape"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_pharmacy"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/ic_pharmacy_medicine" />
+
+        <TextView
+            android:id="@+id/txt_pharmacy_name_pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_pharmacy"
+            android:text="Naveen Medical Store" />
+
+        <TextView
+            android:id="@+id/txt_contact_person_pharmacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_pharmacy_name_pharmacy"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_pharmacy"
+            android:text="Contact Person Naveen Singh" />
+
+        <TextView
+            android:id="@+id/txt_call_on_pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_contact_person_pharmacy"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_pharmacy"
+            android:text="Call on 345340" />
+
+        <TextView
+            android:id="@+id/txt_km_pharmacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_call_on_pharmacy"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_toEndOf="@+id/ic_pharmacy"
+            android:text="Away 10 km" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
