@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:orientation="horizontal">
 
 
@@ -10,13 +11,17 @@
         android:id="@+id/ic_doctor"
         android:layout_width="@dimen/dp_36"
         android:layout_height="@dimen/dp_36"
-        android:layout_gravity="center"
+        android:layout_centerVertical="true"
         app:srcCompat="@drawable/ic_doctor" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_4"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@+id/btn_click_me"
+        android:layout_toEndOf="@+id/ic_doctor"
+        android:gravity="start"
         android:orientation="vertical">
 
         <TextView
@@ -26,6 +31,7 @@
             android:text="@string/dr_manu_singh"
             android:textSize="20sp"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/txt_year"
@@ -42,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_4"
-            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_8"
             android:text="@string/mbbs_md"
             android:textSize="18sp" />
 
@@ -51,14 +57,14 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_click_me"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|center_vertical"
-        android:layout_marginStart="@dimen/dp_16"
-        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/book_appointment"
-        app:cornerRadius="@dimen/dp_8"
-        />
+        app:cornerRadius="@dimen/dp_8" />
 
 
-</LinearLayout>
+</RelativeLayout>

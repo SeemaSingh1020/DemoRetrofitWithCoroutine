@@ -7,10 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.demoretrofitwithcoroutine.databinding.ItemHomeBinding
 import com.demoretrofitwithcoroutine.model.HomeData
-import com.demoretrofitwithcoroutine.view.AmbulanceListActivity
-import com.demoretrofitwithcoroutine.view.DoctorListActivity
-import com.demoretrofitwithcoroutine.view.HospitalsListActivity
-import com.demoretrofitwithcoroutine.view.PharmacyListActivity
+import com.demoretrofitwithcoroutine.view.*
 
 class HomeAdapter(private val homeDataList: List<HomeData>) :
     RecyclerView.Adapter<HomeAdapterViewHolder>() {
@@ -66,13 +63,15 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                     val intent = Intent(root.context, HospitalsListActivity::class.java)
                     root.context.startActivity(intent)
                 } else if (position == 2) {
-                    val intent = Intent(root.context,PharmacyListActivity::class.java)
+                    val intent = Intent(root.context, PharmacyListActivity::class.java)
                     root.context.startActivity(intent)
-                } else if (position == 3){
-                    val intent = Intent(root.context,AmbulanceListActivity::class.java)
+                } else if (position == 3) {
+                    val intent = Intent(root.context, AmbulanceListActivity::class.java)
+                    root.context.startActivity(intent)
+                } else if (position == 4) {
+                    val intent = Intent(root.context, DoctorAtHomeListActivity::class.java)
                     root.context.startActivity(intent)
                 }
-
 
 
             }

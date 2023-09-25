@@ -22,7 +22,6 @@ class AmbulanceListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityAmbulanceListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.recyclerViewAmbulanceList.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         lifecycleScope.launch {
