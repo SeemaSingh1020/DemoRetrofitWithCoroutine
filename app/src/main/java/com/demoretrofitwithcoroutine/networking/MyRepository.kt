@@ -36,4 +36,7 @@ interface MyRepository {
 
     @GET("v3/82f04e08-7142-4b06-8743-83e031d84e11")
     suspend fun getDoctorAtHomeData(): Response<List<NearDoctorAtHomeList>>
+
+    @GET("v3/0287bbee-6fe1-45b9-b506-0513be223ef8")
+    suspend fun getNurseAtHomeData(): Response<List<NearNurseAtHomeList>>
 }

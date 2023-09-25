@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demoretrofitwithcoroutine.databinding.ActivityDoctorAtHomeListBinding
-import com.demoretrofitwithcoroutine.view.ui.adapters.AmbulanceListAdapter
 import com.demoretrofitwithcoroutine.view.ui.adapters.DoctorAtHomeListAdapter
 import com.demoretrofitwithcoroutine.viewmodels.DoctorAtHomeListViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-
+@AndroidEntryPoint
 class DoctorAtHomeListActivity : AppCompatActivity() {
     private val doctorAtHomeViewModel: DoctorAtHomeListViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {

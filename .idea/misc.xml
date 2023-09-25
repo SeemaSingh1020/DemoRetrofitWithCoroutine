@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/layout/activity_hospitals_list.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_hospitals_list2.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_nurse_at_home.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_pharmacy_list.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/app_bar_dash_board.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/content_dash_board.xml" value="0.24010416666666667" />
@@ -30,6 +31,7 @@
         <entry key="app/src/main/res/layout/item_doctor_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_home.xml" value="0.26734466552734376" />
         <entry key="app/src/main/res/layout/item_hospitals_list.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_nurse_at_home_list.xml" value="0.2747151692708333" />
         <entry key="app/src/main/res/layout/item_pharmacy_list.xml" value="0.2669428507486979" />
         <entry key="app/src/main/res/layout/nav_header_dash_board.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/progress_dialog.xml" value="0.2375" />
