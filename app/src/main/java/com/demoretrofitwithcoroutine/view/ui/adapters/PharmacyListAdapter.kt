@@ -17,8 +17,8 @@ class PharmacyListAdapter(private val pharmacyList: List<NearPharmacyList>) :
      with(holder.binding){
          with(pharmacyList[position]){
              txtPharmacyNamePharmacy.text = pharmacyName
-             txtContactPersonPharmacy.text = contactPerson
-             txtCallOnPharmacy.text = number
+             txtContactPersonPharmacy.text = "Contact Person :" + contactPerson
+             txtCallOnPharmacy.text = "Contact : "+number
              txtKmPharmacy.text = distance
          }
      }

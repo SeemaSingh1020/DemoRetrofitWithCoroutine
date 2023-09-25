@@ -3,15 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginEnd="@dimen/dp_8">
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ic_doctor"
+        android:id="@+id/ic_ambulance"
         android:layout_width="@dimen/dp_36"
         android:layout_height="@dimen/dp_36"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/ic_doctor" />
+        android:layout_marginStart="@dimen/dp_4"
+        app:srcCompat="@drawable/ic_ambulance" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,31 +24,39 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txt_name"
+            android:id="@+id/txt_ambulance_driver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dr_manu_singh"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/hitesh_prasad"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txt_year"
+            android:id="@+id/txt_ambulance_contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/dp_16"
-            android:text="@string/_5_year"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:text="@string/contact_8343834383"
             android:textSize="16sp"
 
             />
 
         <TextView
-            android:id="@+id/txt_degree"
+            android:id="@+id/txt_ambulance_charge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_4"
-            android:layout_marginBottom="@dimen/dp_16"
-            android:text="@string/mbbs_md"
-            android:textSize="18sp" />
+            android:layout_marginEnd="@dimen/dp_4"
+            android:text="@string/_1700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_ambulance_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:text="@string/away_12_km"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -54,9 +66,9 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end|center_vertical"
-        android:layout_marginStart="@dimen/dp_16"
-        android:layout_marginEnd="@dimen/dp_8"
-        android:text="@string/book_appointment"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:text="@string/book_now"
         app:cornerRadius="@dimen/dp_8"
         />
 

@@ -30,4 +30,7 @@ interface MyRepository {
 
     @GET("v3/7484e958-c142-408e-8473-b9ea9a9a6e7d")
     suspend fun getPharmacyData():Response<List<NearPharmacyList>>
+
+    @GET("v3/d5dfe135-a5aa-4e77-8e6f-8ea3b8a8e26e")
+    suspend fun getAmbulanceData():Response<List<NearAmbulanceList>>
 }
