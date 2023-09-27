@@ -74,15 +74,19 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                 } else if (position == 5) {
                     val intent = Intent(root.context, NurseAtHomeListActivity::class.java)
                     root.context.startActivity(intent)
+                } else if (position == 6) {
+                    val intent = Intent(root.context, MedicalHistoryActivity::class.java)
+                    root.context.startActivity(intent)
                 }
-
 
             }
 
         }
 
+
     }
 
     override fun getItemCount() = homeDataList.size
+
 
 }

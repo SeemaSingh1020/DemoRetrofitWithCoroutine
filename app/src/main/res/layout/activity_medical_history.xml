@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.MedicalHistoryActivity">
+
+    <ImageView
+        android:id="@+id/ic_medical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_medical"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/txt_medical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ic_medical"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="@string/we_do_not_have_any_your_medical_history_once_your_doctor_will_upload_your_prescription_then_you_will_be_able_to_see_your_medical_history_we_also_do_not_have_any_medicine_order_data_from_our_app_if_you_have_some_health_issue_please_book_some_appointment_with_the_doctor_and_purchase_some_medicine"
+
+        android:textSize="23sp" />
+
+
+</RelativeLayout>
