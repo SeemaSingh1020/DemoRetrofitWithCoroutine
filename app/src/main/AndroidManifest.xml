@@ -18,6 +18,9 @@
         android:theme="@style/Theme.DemoRetrofitWithCoroutine"
         tools:targetApi="31">
         <activity
+            android:name=".view.EmergencyHelpActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.MedicalHistoryActivity"
             android:exported="false" />
         <activity

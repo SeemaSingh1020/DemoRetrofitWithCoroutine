@@ -77,6 +77,9 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                 } else if (position == 6) {
                     val intent = Intent(root.context, MedicalHistoryActivity::class.java)
                     root.context.startActivity(intent)
+                }else if (position == 7){
+                    val intent = Intent(root.context,EmergencyHelpActivity::class.java)
+                    root.context.startActivity(intent)
                 }
 
             }

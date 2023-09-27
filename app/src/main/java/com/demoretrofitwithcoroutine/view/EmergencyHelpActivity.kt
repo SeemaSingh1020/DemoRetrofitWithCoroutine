@@ -2,12 +2,12 @@ package com.demoretrofitwithcoroutine.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.demoretrofitwithcoroutine.databinding.ActivityMedicalHistoryBinding
+import com.demoretrofitwithcoroutine.databinding.ActivityEmergencyHelpBinding
 
-class MedicalHistoryActivity : AppCompatActivity() {
+class EmergencyHelpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMedicalHistoryBinding.inflate(layoutInflater)
+        val binding = ActivityEmergencyHelpBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

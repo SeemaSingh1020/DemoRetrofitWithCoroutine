@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EmergencyHelpActivity">
+
+    <ImageView
+        android:id="@+id/ic_emergency_helps"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:src="@drawable/ic_emergency"/>
+
+    <TextView
+        android:id="@+id/txt_emergency_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_emergency_helps"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:textSize="18sp"
+        android:text="@string/you_ask_for_emergency_help_we_are_looking_into_it_we_will_reach_you_soon_you_can_connect_with_our_team_on_emergency_help_number"/>
+
+    <TextView
+        android:id="@+id/txt_emergency_help_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_emergency_help"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/connect_at_8243434312"/>
+
+</RelativeLayout>
