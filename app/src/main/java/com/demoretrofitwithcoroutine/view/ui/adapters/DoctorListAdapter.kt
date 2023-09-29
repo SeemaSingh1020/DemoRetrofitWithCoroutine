@@ -5,11 +5,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demoretrofitwithcoroutine.databinding.ItemDoctorListBinding
 import com.demoretrofitwithcoroutine.model.NearDoctorList
+import com.demoretrofitwithcoroutine.model.SharedPreferenceHelper
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 
-class DoctorListAdapter(var doctorList: List<NearDoctorList>) :
+class DoctorListAdapter @Inject constructor(var sharedPreferenceHelper: SharedPreferenceHelper,var doctorList: List<NearDoctorList>) :
     RecyclerView.Adapter<DoctorListViewHolder>() {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorListViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemDoctorListBinding.inflate(inflater, parent, false)
@@ -27,6 +29,9 @@ class DoctorListAdapter(var doctorList: List<NearDoctorList>) :
           binding.txtName.text = doctorDetail.name*/
 
         with(holder.binding) {
+            btnBookAppointment.setOnClickListener {
+                sharedPreferenceHelper.saveDoctorAppointment(doctorList[position])
+            }
             with(doctorList[position]) {
                 txtName.text = name
                 txtYear.text = experience

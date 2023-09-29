@@ -1,9 +1,12 @@
 package com.demoretrofitwithcoroutine.networking
 
+import android.content.Context
+import android.content.SharedPreferences
 import com.demoretrofitwithcoroutine.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -14,6 +17,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object RetrofitHelper {
+    private val preferenceName="com.demoretrofitwithcoroutine"
     @Provides
     fun provideBaseUrl() = BuildConfig.BASE_URL
 
@@ -60,4 +64,11 @@ object RetrofitHelper {
         this.BASE_URL = baseUrl
 
     }
+
+    @Singleton
+    @Provides
+    fun provideSharedPreference(@ApplicationContext context: Context): SharedPreferences {
+        return context.getSharedPreferences(preferenceName, Context.MODE_PRIVATE)
+    }
+
 }

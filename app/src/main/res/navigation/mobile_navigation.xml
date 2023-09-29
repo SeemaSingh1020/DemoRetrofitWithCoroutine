@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.demoretrofitwithcoroutine.view.ui.gallery.GalleryFragment"
+        android:name="com.demoretrofitwithcoroutine.view.ui.yourBooking.YourBookingFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 

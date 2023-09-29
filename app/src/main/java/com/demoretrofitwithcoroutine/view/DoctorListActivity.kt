@@ -5,13 +5,16 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demoretrofitwithcoroutine.databinding.ActivityDoctorListBinding
+import com.demoretrofitwithcoroutine.model.SharedPreferenceHelper
 import com.demoretrofitwithcoroutine.view.ui.adapters.DoctorListAdapter
 import com.demoretrofitwithcoroutine.viewmodels.DoctorListViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class DoctorListActivity : AppCompatActivity() {
-
+    @Inject
+    lateinit var sharedPreferenceHelper: SharedPreferenceHelper
     /*private val myViewModel: DoctorListViewModel by lazy {
         ViewModelProvider(this)[DoctorListViewModel::class.java]
     }*/
@@ -23,7 +26,7 @@ class DoctorListActivity : AppCompatActivity() {
         myViewModel.getDoctorData()
         binding.recycleDoctorList.layoutManager= LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         myViewModel.doctorList.observe(this) {
-            binding.recycleDoctorList.adapter= DoctorListAdapter(it.doctorList)
+            binding.recycleDoctorList.adapter= DoctorListAdapter(sharedPreferenceHelper,it.doctorList)
         }
 
     }

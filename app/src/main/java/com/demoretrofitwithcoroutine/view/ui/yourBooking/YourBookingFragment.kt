@@ -1,4 +1,4 @@
-package com.demoretrofitwithcoroutine.view.ui.gallery
+package com.demoretrofitwithcoroutine.view.ui.yourBooking
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.demoretrofitwithcoroutine.databinding.FragmentGalleryBinding
 
-class GalleryFragment : Fragment() {
+class YourBookingFragment : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
 
@@ -23,7 +23,7 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val galleryViewModel =
-            ViewModelProvider(this)[GalleryViewModel::class.java]
+            ViewModelProvider(this)[YourBookingViewModel::class.java]
 
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
