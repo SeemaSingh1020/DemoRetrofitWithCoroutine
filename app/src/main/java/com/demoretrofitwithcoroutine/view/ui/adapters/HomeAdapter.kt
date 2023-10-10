@@ -56,31 +56,33 @@ class HomeAdapter(private val homeDataList: List<HomeData>) :
                 imgHomeItem.background = ContextCompat.getDrawable(root.context, resId)
             }
             row.setOnClickListener {
-                if (position == 0) {
-                    val intent = Intent(root.context, DoctorListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 1) {
-                    val intent = Intent(root.context, HospitalsListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 2) {
-                    val intent = Intent(root.context, PharmacyListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 3) {
-                    val intent = Intent(root.context, AmbulanceListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 4) {
-                    val intent = Intent(root.context, DoctorAtHomeListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 5) {
-                    val intent = Intent(root.context, NurseAtHomeListActivity::class.java)
-                    root.context.startActivity(intent)
-                } else if (position == 6) {
-                    val intent = Intent(root.context, MedicalHistoryActivity::class.java)
-                    root.context.startActivity(intent)
-                }else if (position == 7){
-                    val intent = Intent(root.context,EmergencyHelpActivity::class.java)
-                    root.context.startActivity(intent)
+                with(root.context) {
+                    if (position == 0) {
+                        //val inent= DoctorListActivity::class.java.getIntent( root.context)
+                        // root.context.startActivity(inent)
+                        startActivity(DoctorListActivity::class.java)
+                    } else if (position == 1) {
+                        startActivity(HospitalsListActivity::class.java)
+                    } else if (position == 2) {
+                        startActivity(PharmacyListActivity::class.java)
+                    } else if (position == 3) {
+                        val intent = Intent(root.context, AmbulanceListActivity::class.java)
+                        startActivity(intent)
+                    } else if (position == 4) {
+                        val intent = Intent(root.context, DoctorAtHomeListActivity::class.java)
+                        startActivity(intent)
+                    } else if (position == 5) {
+                        val intent = Intent(root.context, NurseAtHomeListActivity::class.java)
+                        startActivity(intent)
+                    } else if (position == 6) {
+                        val intent = Intent(root.context, MedicalHistoryActivity::class.java)
+                        startActivity(intent)
+                    } else if (position == 7) {
+                        val intent = Intent(root.context, EmergencyHelpActivity::class.java)
+                        startActivity(intent)
+                    }
                 }
+
 
             }
 
