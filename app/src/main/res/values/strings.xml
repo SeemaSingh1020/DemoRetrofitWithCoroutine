@@ -32,4 +32,5 @@
     <string name="we_do_not_have_any_your_medical_history_once_your_doctor_will_upload_your_prescription_then_you_will_be_able_to_see_your_medical_history_we_also_do_not_have_any_medicine_order_data_from_our_app_if_you_have_some_health_issue_please_book_some_appointment_with_the_doctor_and_purchase_some_medicine">We do not have any your medical history. Once your doctor will upload your prescription then you will be able to see your medical history. We also do not have any medicine order data from our app. if you have some health issue please book some appointment with the doctor and purchase some medicine</string>
     <string name="you_ask_for_emergency_help_we_are_looking_into_it_we_will_reach_you_soon_you_can_connect_with_our_team_on_emergency_help_number">You ask for emergency help. We are looking into it. We will reach you soon. You can connect with our team on emergency help number</string>
     <string name="connect_at_8243434312">Connect At : 8243434312</string>
+    <string name="appointment_booked">Your Appointment is booked</string>
 </resources>
