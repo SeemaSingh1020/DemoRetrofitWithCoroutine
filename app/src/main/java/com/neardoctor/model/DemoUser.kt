@@ -1,4 +1,3 @@
 package com.neardoctor.model
 
-class DemoUser {
-}
+class DemoUser
