@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DemoRetrofitWithCoroutine</string>
+    <string name="app_name">Near Doctor</string>
     <string name="title_activity_dash_board">DashBoardActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

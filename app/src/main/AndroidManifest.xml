@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.demoretrofitwithcoroutine">
+    package="com.neardoctor">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".MyApplication"
+        android:name="com.neardoctor.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,31 +18,31 @@
         android:theme="@style/Theme.DemoRetrofitWithCoroutine"
         tools:targetApi="31">
         <activity
-            android:name=".view.EmergencyHelpActivity"
+            android:name="com.neardoctor.view.EmergencyHelpActivity"
             android:exported="false" />
         <activity
-            android:name=".view.MedicalHistoryActivity"
+            android:name="com.neardoctor.view.MedicalHistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".view.NurseAtHomeListActivity"
+            android:name="com.neardoctor.view.NurseAtHomeListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.DoctorAtHomeListActivity"
+            android:name="com.neardoctor.view.DoctorAtHomeListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.AmbulanceListActivity"
+            android:name="com.neardoctor.view.AmbulanceListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.PharmacyListActivity"
+            android:name="com.neardoctor.view.PharmacyListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.HospitalsListActivity"
+            android:name="com.neardoctor.view.HospitalsListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.DoctorListActivity"
+            android:name="com.neardoctor.view.DoctorListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.DashBoardActivity"
+            android:name="com.neardoctor.view.DashBoardActivity"
             android:exported="true"
             android:label="@string/title_activity_dash_board"
             android:theme="@style/Theme.DemoRetrofitWithCoroutine.NoActionBar">
@@ -53,7 +53,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.neardoctor.view.MainActivity"
             android:exported="true">
 
             <!--
